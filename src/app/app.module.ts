@@ -7,6 +7,11 @@ import { DemoproductsComponent } from './demoproducts/demoproducts.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { SelectionsComponent } from './selections/selections.component';
+import { AboutsectionComponent } from './aboutsection/aboutsection.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { ContactComponent } from './contact/contact.component';
+import { CartComponent } from './cart/cart.component';
+import { ProductlistingComponent } from './productlisting/productlisting.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { SelectionsComponent } from './selections/selections.component';
     DemoproductsComponent,
     FooterComponent,
     LoginpageComponent,
-    SelectionsComponent
+    SelectionsComponent,
+    AboutsectionComponent,
+    GalleryComponent,
+    ContactComponent,
+    CartComponent,
+    ProductlistingComponent
   ],
   imports: [
     BrowserModule

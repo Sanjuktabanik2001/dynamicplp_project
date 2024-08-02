@@ -1,0 +1,93 @@
+
+body{
+    /* background-image: url(images/4.jpeg);
+    background-size: cover; */
+    color: rgb(65, 1, 1);
+    
+    
+}
+.titlebox{
+    margin-top: 40px;
+    text-align: center;
+    color: rgb(6, 6, 6);
+    letter-spacing: 7px;
+    font-family: 'Abril';
+    
+}
+.bi{
+    font-size: 1.5em;
+}
+/* Filter/Sort  */
+.cards {
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f8b3ba;
+    
+}
+.row-equal > .cards {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+.card:hover {
+    transform: scale(1.15);
+    transition-timing-function: ease-in-out;
+}
+.dropdown-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.buttons-container {
+    position: absolute;
+    left: 75%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+/* Product Listing  */
+.card{
+    padding: 20px;
+    margin: 40px;
+    margin-right: 100px;
+    display: flex;
+    /* justify-content: center;  */
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* box-shadow: 10px 10px #959494;  */
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+    
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+.card:hover{
+    box-shadow: 7px 7px #b5545e;
+    transform: scale(1.05);
+}
+.card h3{
+    font-size: 20px;
+    text-align: center;
+}
+.card h6{
+    font-size: 15px;
+    text-align: center;
+}
+.card p{
+    font-size: 20px;
+    text-align: center;
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+}
+.card img:hover{
+    transform: scale(1.1);
+}
