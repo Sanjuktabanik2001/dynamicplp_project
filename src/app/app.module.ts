@@ -6,6 +6,12 @@ import { HeaderComponent } from './header/header.component';
 import { DemoproductsComponent } from './demoproducts/demoproducts.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
+import { SelectionsComponent } from './selections/selections.component';
+import { AboutsectionComponent } from './aboutsection/aboutsection.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { ContactComponent } from './contact/contact.component';
+import { CartComponent } from './cart/cart.component';
+import { ProductlistingComponent } from './productlisting/productlisting.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +19,13 @@ import { LoginpageComponent } from './loginpage/loginpage.component';
     HeaderComponent,
     DemoproductsComponent,
     FooterComponent,
-    LoginpageComponent
+    LoginpageComponent,
+    SelectionsComponent,
+    AboutsectionComponent,
+    GalleryComponent,
+    ContactComponent,
+    CartComponent,
+    ProductlistingComponent
   ],
   imports: [
     BrowserModule

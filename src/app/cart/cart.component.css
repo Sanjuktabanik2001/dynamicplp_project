@@ -1,67 +1,63 @@
-body{
+body {
     background-color: #370617;
-    margin: 0;
-    padding: 0;
-}
-h2{
-    text-align: center;
-    height: 100px;
+  }
+  
+  h2{
+    /* text-align: center; */
+    font-size: 170px;
+    font-family: 'Montserrat'; /*changes*/
     color: white;
-    /* font-style: italic;  */
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  */
-    background-color: #b5545e;
+    font-weight: lighter; /*changes*/
     padding-top: 30px;
-} 
-.row{
-    display: flex;
-    justify-content: space-around;
-}
-.card{
+    letter-spacing: 80px;
+    
+  }
+  .card{
+  
     padding: 20px;
     margin: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* box-shadow: 10px 10px #959494;  */
-    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
-    
+    /* box-shadow: 8.0px 16.0px 16.0px hsla(0, 82%, 78%, 0.25);  */
+    box-shadow: 1.5px 3.0px 3.0px hsla(0, 82%, 78%, 0.25);
     border-radius: 10px;
     transition: 0.3s ease-in-out;
-}
-.card:hover{
-    box-shadow: 7px 7px #b5545e;
+  }
+  
+  .card:hover{
+    box-shadow: 8.0px 16.0px 16.0px hsla(0, 82%, 78%, 0.25);
     transform: scale(1.05);
-}
-.card h3{
+  }
+  .card h3{
     font-size: 20px;
     text-align: center;
-}
-.card h6{
+  }
+  .card h6{
     font-size: 15px;
     text-align: center;
-}
-.card p{
+  }
+  .card p{
     font-size: 20px;
     text-align: center;
-}
-.card img{
+  }
+  .card img{
     width: 200px;
     height: 200px;
     margin-bottom: 15px;
     text-align: center;
     transition: 0.5s ease-in-out;
     border-radius: 10px;
-}
-.card i{
-    color: #370617;
-}
-.card img:hover{
+  }
+  .card img:hover{
     transform: scale(1.1);
-}
-.button-container {
-    display: flex;
+  }
+  div.btn{
+    display:flex;
     justify-content: center;
-    align-items: center;
-    
-}
+  }
+  div.btn a{
+    text-decoration: none;
+    color: white;
+  }
