@@ -19,6 +19,7 @@ import { MiddlesectionComponent } from './middlesection/middlesection.component'
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
+
 const routes: Routes = [
   { path: '', component: MiddlesectionComponent},
   
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'gallery', component: GalleryComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'cart', component: CartComponent},
+
   { path: 'productlisting', component: ProductlistingComponent}
   
 ]
