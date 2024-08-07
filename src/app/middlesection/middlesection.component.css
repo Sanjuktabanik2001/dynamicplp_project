@@ -107,22 +107,6 @@ iframe{
 .work:hover .layer{
     height: 100%;
 }
-.btn{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #dd87f9;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #0c0cf2;
-    transition: background 0.5s;
-
-}
-.btn:hover{
-    background: rgb(249, 195, 246);
-
-}
 
 /* demoproducts */
 body{
@@ -152,7 +136,7 @@ h2{
     flex-direction: column;
     /* box-shadow: 10px 10px #959494;  */
     box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
-    
+    height: 500px;
     border-radius: 10px;
     transition: 0.3s ease-in-out;
 }
@@ -205,3 +189,34 @@ h2{
     font-size: 20px;
     border: 2px solid black;
 }
+.alert {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    transition: opacity 0.5s ease-out;
+    width: 100px;
+  }
+  
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+  }
+  button {
+    margin: 5px;
+  }
+  .cartwishbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .likebutton{
+    border: 0 black;
+    background-color: white;
+  }

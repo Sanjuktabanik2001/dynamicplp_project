@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../services/cart.service';
 import { Product } from '../models/product.model';
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'app-cart',
@@ -15,6 +16,7 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadCart();
+    // this.loadHeader();
   }
 
   loadCart(): void {
@@ -26,6 +28,7 @@ export class CartComponent implements OnInit {
   removeItem(product: Product): void {
     this.cartService.removeFromCart(product);
     this.loadCart();
+    // this.load
     //  this.cdr.detectChanges();
   }
 

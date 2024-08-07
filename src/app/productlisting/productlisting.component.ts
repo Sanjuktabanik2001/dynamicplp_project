@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { CartService } from '../services/cart.service';
 import { Product } from '../models/product.model';
 import productsData from 'productlisting.json';
+import { WishlistService } from '../services/wishlist.service';
 
 @Component({
   selector: 'app-productlisting',
@@ -14,12 +15,29 @@ name='Angular';
   
   showPrompt: boolean = false;
   promptMessage: string = '';
+  isInwishlist:boolean =false;
+  // ### LIKE BUTTON ###
+  public isButtonHeartOn = false;
+  public size: number = 70;
+  onClickButtonHeart() {
+    this.isButtonHeartOn = !this.isButtonHeartOn;
+  }
+  // 
+  constructor(private cartService: CartService,private wishlistService:WishlistService) {
 
-  constructor(private cartService: CartService) {}
+  }
 
   ngOnInit(): void {}
+  addtoWishList(product:Product): void{
+      this.wishlistService.addToWishlist(product);
+      this.showPrompt =true;
+      this.promptMessage='Added to Wishlist';
 
-  addToCart(product: Product): void {
+      setTimeout(() => {
+        this.showPrompt = false;
+      }, 2000); // Hide prompt after 2 seconds
+  }
+  addToCart( product: Product): void {
     this.cartService.addToCart(product);
     this.showPrompt = true;
     this.promptMessage = 'Added to Cart';

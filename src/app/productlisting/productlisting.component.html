@@ -244,7 +244,8 @@
           <p>
             <strong>{{ product.price }}</strong>
           </p>
-          <button
+          <div class="cartwishbox">
+            <button
             (click)="addToCart(product)"
             type="button"
             class="btn btn-outline-success"
@@ -252,6 +253,20 @@
             <i class="fa fa-shopping-cart"></i>
             Add to Cart
           </button>
+          <!-- <a [routerLink]="['/wishlist']"><i class="bi bi-heart-fill"></i></a> -->
+           <button class="likebutton" [ngClass]="{}"(click)="addtoWishList(product)"><i class="bi bi-heart"></i></button>
+           <!-- <p-button icon="pi pi-heart" [rounded]="true" severity="help" /> -->
+           <!-- <button type="button" class="btn btn-outline-danger"><i class="bi bi-heart"></i></button> -->
+          <!--  <button class="likebutton" >
+            <p-button  icon="pi pi-heart" [rounded]="true" [text]="true" [raised]="true" severity="help"  (click)="addtoWishList(product)"/>
+           </button> -->
+           <!--  -->
+           
+           <!--  -->
+           <div class="flex justify-content-center flex-wrap gap-3 mb-4">
+            <!-- <p-button icon="pi pi-heart" [rounded]="true" [text]="true" [raised]="true" severity="help" /> -->
+        </div>
+          </div>
           <div class="quantity-container">
             <button class="quantity-button" (click)="decreaseQuantity(product)">
               -

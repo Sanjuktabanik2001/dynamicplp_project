@@ -17,6 +17,11 @@ import { MiddlesectionComponent } from './middlesection/middlesection.component'
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { WishlistComponent } from './wishlist/wishlist.component';
+// import { ButtonModule } from 'primeng/button';
+// import { ButtonModule } from 'primeng/button';
+
+
 
 const routes: Routes = [
   { path: '', component: MiddlesectionComponent },
@@ -26,6 +31,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'cart', component: CartComponent },
   { path: 'productlisting', component: ProductListingComponent },
+  {path:'wishlist',component: WishlistComponent}
 ];
 
 @NgModule({
@@ -40,6 +46,7 @@ const routes: Routes = [
     CartComponent,
     ProductListingComponent,
     MiddlesectionComponent,
+    WishlistComponent,
   ],
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(routes)],
   providers: [CartService],
